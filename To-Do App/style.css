@@ -1,0 +1,146 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #fce4ec, #f8bbd0);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  margin-top: 50px;
+}
+
+h1 {
+  text-align: center;
+  color: #ad1457;
+  margin-bottom: 25px;
+}
+
+.task-input input,
+.task-input select,
+.task-input button {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.task-input input#taskText {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.row-inputs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.row-inputs select,
+.row-inputs input[type="datetime-local"] {
+  flex: 1;
+  min-width: 150px;
+}
+
+.task-input button {
+  background-color: #ad1457;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+.task-input button:hover {
+  background-color: #880e4f;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background-color: #f06292;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 5px 3px;
+}
+
+.filter-btn.active {
+  background-color: #c2185b;
+}
+
+#searchInput {
+  padding: 8px 14px;
+  width: 100%;
+  max-width: 250px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.task {
+  background: #fce4ec;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.info {
+  max-width: 70%;
+}
+
+.info strong {
+  display: block;
+  font-size: 16px;
+}
+
+.info small {
+  color: #555;
+}
+
+.category-tag {
+  display: inline-block;
+  background: #d1c4e9;
+  color: #4a148c;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.actions button {
+  margin: 3px;
+  border: none;
+  background-color: #ce93d8;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.actions button:hover {
+  background-color: #ab47bc;
+}
